@@ -1,0 +1,126 @@
+body {
+  /* Set the font for the entire page to Arial or a sans-serif fallback */
+  font-family: Arial, sans-serif;
+  
+  /* Center all text on the page */
+  text-align: center;
+  
+  /* Set a light grey background color for the page */
+  background-color: #f4f4f4;
+  
+  /* Set the default text color to dark grey */
+  color: #333;
+  
+  /* Remove default margin and add padding around the body */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  /* Set a large font size for the main heading */
+  font-size: 2.5em;
+  
+  /* Add space below the heading */
+  margin-bottom: 20px;
+}
+
+.timer-setup {
+  /* Add space below the timer setup section */
+  margin-bottom: 20px;
+}
+
+#datetime {
+  /* Add padding inside the input field for the date and time */
+  padding: 10px;
+  
+  /* Set the font size for the input field */
+  font-size: 1em;
+}
+
+#addTimerBtn {
+  /* Add padding inside the "Add Timer" button */
+  padding: 10px 20px;
+  
+  /* Set the font size for the button text */
+  font-size: 1em;
+  
+  /* Add margin to the left of the button */
+  margin-left: 10px;
+  
+  /* Set the background color of the button to green */
+  background-color: #4CAF50;
+  
+  /* Set the text color of the button to white */
+  color: white;
+  
+  /* Remove the default border of the button */
+  border: none;
+  
+  /* Change the cursor to a pointer when hovering over the button */
+  cursor: pointer;
+}
+
+#addTimerBtn:hover {
+  /* Change the background color of the button when hovering */
+  background-color: #45a049;
+}
+
+#timersContainer {
+  /* Add space above the timers container */
+  margin-top: 20px;
+}
+
+.timer-display {
+  /* Add space above each timer display */
+  margin-top: 20px;
+  
+  /* Add a light grey border around the timer display */
+  border: 1px solid #ddd;
+  
+  /* Add padding inside the timer display */
+  padding: 15px;
+  
+  /* Set the background color of the timer display to white */
+  background-color: #fff;
+  
+  /* Make the timer display inline-block and center it with a fixed width */
+  display: inline-block;
+  width: 90%;
+  max-width: 500px;
+  
+  /* Add a subtle shadow around the timer display for depth */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer-display p {
+  /* Add a small margin above and below the text inside the timer display */
+  margin: 5px 0;
+  
+  /* Set the font size for text inside the timer display */
+  font-size: 1.2em;
+}
+
+.timer-display .countdown {
+  /* Set a larger font size for the countdown numbers */
+  font-size: 2em;
+}
+
+.timer-display .countdown span {
+  /* Add space around each number in the countdown */
+  margin: 0 5px;
+  
+  /* Apply a flashing animation to the countdown numbers */
+  animation: flash 1s ease-in-out infinite;
+}
+
+/* Define the flashing animation for the countdown numbers */
+@keyframes flash {
+  /* At 0% and 100% of the animation, the element is fully opaque */
+  0% { opacity: 1; }
+  
+  /* At 50% of the animation, the element is half opaque */
+  50% { opacity: 0.5; }
+  
+  /* The element returns to fully opaque */
+  100% { opacity: 1; }
+}
